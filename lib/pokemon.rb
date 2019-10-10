@@ -24,8 +24,8 @@ class Pokemon
       WHERE id = ?
       LIMIT 1 
       SQL
-      object = db.execute(sql, id)
-      
+      row = db.execute(sql, id)
+      new_pokemone = pokemon.new() 
   
   
 end
