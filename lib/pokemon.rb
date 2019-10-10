@@ -30,6 +30,7 @@ class Pokemon
       new_pokemon.id = row[0][0]
       new_pokemon.name = row[0][1]
       new_pokemon.type = row[0][2]
+      new_pokemon
       
     end
   
