@@ -26,8 +26,10 @@ class Pokemon
       SQL
       row = db.execute(sql, id)
       new_pokemon = Pokemon.new(row) 
-    binding.pry
+    
       new_pokemon.id = row[0][0]
+      new_pokemon.name = row[0][1]
+      new_pokemon.type = row[0][2]
       
     end
   
